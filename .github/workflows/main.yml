@@ -28,7 +28,17 @@ jobs:
       with:
         name: hello-wprld
         runtime: nodejs10
-        credentials: ${{ secrets.nk_sandbox }}
+
+    - name: Set up Cloud SDK
+      uses: google-github-actions/setup-gcloud@master
+      with:
+        project_id: ${{ secrets.ntg-nk-sandbox }}
+        service_account_key: ${{ secrets.nk_sandbox }}
+        export_default_credentials: true
+
+- name: Use gcloud CLI
+  run: gcloud info
+        
 
     # Example of using the output
     - id: test
