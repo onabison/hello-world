@@ -28,7 +28,7 @@ jobs:
       with:
         name: hello-wprld
         runtime: nodejs10
-        service_account_key: ${{ secrets.nk_sandbox }}
+        credentials: ${{ secrets.nk_sandbox }}
 
     # Example of using the output
     - id: test
