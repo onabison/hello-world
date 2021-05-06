@@ -57,5 +57,5 @@ class ProgramTests(unittest.TestCase):
         #Then 
         self.assertEqual(result, expected, "test_string_to_list failed happy path")
 
-if __name__ == "__main__":
-        unittest.main()
+# if __name__ == "__main__":
+#         unittest.main()
