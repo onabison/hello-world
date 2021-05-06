@@ -1,6 +1,9 @@
 name: Python package
 
-on: [merge]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -22,5 +25,5 @@ jobs:
         pip install unittest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with unittest
-      run: | python3 test_program.py
-        unittest
+      run: | 
+        python3 test_program.py
