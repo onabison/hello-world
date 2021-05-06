@@ -1,6 +1,9 @@
 name: Python package
 
-on: [merge]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
