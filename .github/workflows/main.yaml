@@ -33,4 +33,4 @@ jobs:
         coverage report -m --fail-under=50
     - name: Bantid testing
       run: | 
-      bandit -r ~/Documents/Python/Cloud Function/hello-world
+        bandit -r ~/Documents/Python/Cloud Function/hello-world
