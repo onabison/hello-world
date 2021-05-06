@@ -6,7 +6,7 @@ class ProgramTests(unittest.TestCase):
     def test_string_to_list(self):
         #Given
         test_var = "This is a string to split"
-        expected = ["This", "is", "a", "string", "to", "split"]
+        expected = ["This", "is", "a", "string", "to", "split "]
 
         #When 
         result = program.string_to_list(test_var)
