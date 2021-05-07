@@ -31,6 +31,13 @@ jobs:
     - name: Report step
       run: | 
         coverage report -m --fail-under=50
+        
+    - name: Security check report artifacts
+      uses: actions/upload-artifact@v1
+      # if: failure()
+      with:
+        name: Security report
+        path: output/security_report.txt
     - name: Bantid testing
       run: | 
         bandit -r ~/hello-world/*.py
