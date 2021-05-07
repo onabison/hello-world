@@ -32,13 +32,6 @@ jobs:
         coverage report -m --fail-under=50
 
 
-name: Bandit
-on:
-  push:
-    branches:
-      - master
-
-jobs:
   bandit:
     runs-on: ubuntu-latest
     steps:
